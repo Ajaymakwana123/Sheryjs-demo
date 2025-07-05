@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "averta cy w10"; */
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "popin";
+  src: url("popinbold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow-x: hidden; /* Hides horizontal scroll */
+}
+
+#main {
+  width: 100%;
+  background-color: #fff;
+}
+
+#home {
+  width: 100%;
+  min-height: 100vh;
+  /* border: 2px solid red; */
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 50px;
+}
+
+#nav img {
+  width: 80px;
+}
+
+#nav #right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#nav a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #000;
+  font-size: 1.1vw;
+  text-transform: capitalize;
+  font-family: "popin";
+}
+
+#nav i {
+  margin-top: 3px;
+  font-size: 20px;
+}
+
+#home #homemain {
+  width: 100%;
+  padding: 10vw 10vw;
+  /* background-color: red; */
+}
+
+#homemain h1 {
+  font-weight: 500;
+  letter-spacing: -0.1vw;
+  font-size: 1.5vw;
+}
+
+.headings {
+  display: flex;
+  gap: 40px;
+}
+
+#homemain .headings h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  font-size: 7vw;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -6px;
+}
+
+#homemain .headings h1:hover {
+  color: #000;
+}
+
+#homelast {
+  padding: 5vw 13vw;
+}
+
+#homelast p {
+  width: 70%;
+  font-size: 1.6vw;
+  font-weight: 400;
+  letter-spacing: -0.08vw;
+}
+
+#homelast p::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+#featured {
+  padding: 10vw 15vw;
+}
+
+.fheading > h1 {
+  font-family: "popin";
+  line-height: 1;
+  font-size: 3.5vw;
+  font-weight: 200;
+}
+
+.fheading > h1:nth-child(1) {
+  font-family: "popin";
+  line-height: 1;
+  font-size: 4vw;
+  font-weight: 400;
+}
+.fheading > h1:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+#fimages {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  margin-top: 5vw;
+}
+
+#fleft {
+  overflow: hidden;
+  width: 45%;
+  height: inherit;
+}
+
+.fleftelm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: inherit;
+}
+
+.fleftelm h1 {
+  font-size: 2.4vw;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 1.5vw 0;
+}
+
+.fleftelm h3 {
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+
+.fleftelm h4 {
+  opacity: 0.5;
+}
+
+#fright {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 45%;
+  height: inherit;
+}
+
+#fright .images {
+  width: 90%;
+  height: 90%;
+  background-color: red;
+}
+
+#fright .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btndiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btndiv button {
+  font-family: "popin";
+  padding: 1.3vw 2.5vw;
+  border-radius: 100px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  font-size: 1.1vw;
+  font-weight: 100;
+  letter-spacing: -1px;
+}
+
+#dev {
+  width: 100%;
+  padding: 5vw 15vw;
+}
+
+#dev h1 {
+  font-size: 3.8vw;
+  font-weight: 400;
+  width: 60%;
+  line-height: 1;
+}
+
+#dev p {
+  font-size: 1.5vw;
+  margin-top: 3vw;
+  letter-spacing: -0.5px;
+  width: 60%;
+}
+
+#slides {
+  padding: 3vw 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide {
+  width: 30%;
+}
+
+.slide .img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: yellow;
+}
+
+.slide .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide .tag {
+  width: fit-content;
+  border-radius: 100px;
+  padding: 10px 22px;
+  background-color: #f7f7f7;
+  margin: 20px 0;
+}
+
+.slide h3 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+#bottomimg {
+  width: 100vw; /* Full width of screen */
+  height: 80vh; /* Half the screen height */
+  object-fit: cover; /* Fill the area without stretching */
+  object-position: bottom; /* Show the BOTTOM part of the image */
+  display: block; /* Remove any inline gap */
+}
+
+/* Word Animation for "We make it happen." */
+.word {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(20px);
+  animation: wordFade 0.6s forwards;
+}
+
+@keyframes wordFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Letter animations */
+.heading-word span {
+  display: inline-block;
+  opacity: 0;
+}
+
+/* Slide In */
+.slide span {
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Bounce In */
+.bounce span {
+  animation: bounceIn 0.5s forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Fade In */
+.fade span {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
